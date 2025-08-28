@@ -2,64 +2,65 @@
 
 Este repositório contém um projeto de análise de dados relacionado à pandemia de COVID-19, com foco em tratamento, organização e geração de relatórios estatísticos.
 
-🔹 Estrutura do Projeto
+📂 Estrutura do Projeto
+Trabalho_matheus/
+│── casos_full.csv              # Base de dados bruta
+│── clean_casos_full.py         # Script para limpeza e preparação dos dados
+│── relatorios_covid.py         # Script para geração de relatórios e gráficos
+│── tabela_mortes.csv           # Tabela processada (gerada automaticamente)
+│── relatorios/                 # Resultados: gráficos e relatórios em texto
 
-casos_full.csv → Conjunto de dados bruto com registros de casos.
-
-tabela_mortes.csv → Dados específicos sobre óbitos.
-
-clean_casos_full.py → Script responsável por limpar e padronizar os dados.
-
-relatorios_covid.py → Gera relatórios, gráficos e estatísticas a partir dos dados tratados.
-
-relatorios/ → Pasta com os resultados finais (gráficos, resumos de cidades e análises de mortalidade).
-
-🔹 Funcionalidades
+⚙️ Funcionalidades
 
 Limpeza e padronização de dados de casos de COVID-19.
 
-Geração de relatórios estatísticos em texto.
+Geração de tabela consolidada com mortes e populações por cidade.
 
-Criação de gráficos de evolução populacional e mortalidade.
+Relatórios em texto sobre cidades com mais e menos mortes.
 
-Identificação das cidades com maior número de mortes.
+Gráficos:
 
-🔹 Tecnologias Utilizadas
+Top 10 cidades com mais mortes.
+
+População inicial x final das cidades com mais mortes.
+
+🛠️ Tecnologias Utilizadas
 
 Python 3
 
-Pandas → manipulação e análise de dados
+Pandas
+ → Manipulação e análise de dados
 
-Matplotlib / Seaborn → geração de gráficos
+Matplotlib
+ → Geração de gráficos
 
-CSV como formato principal de entrada/saída
-
-🔹 Como Executar
-
-Clone este repositório:
-
+▶️ Como Executar
+1. Clonar o repositório
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 
+2. Instalar dependências
+pip install pandas matplotlib
 
-Instale as dependências:
-
-pip install pandas matplotlib seaborn
-
-
-Execute o script de limpeza:
-
+3. Gerar a tabela de mortes
 python clean_casos_full.py
 
 
-Gere os relatórios:
+Isso criará o arquivo tabela_mortes.csv.
 
+4. Criar relatórios e gráficos
 python relatorios_covid.py
 
-🔹 Resultados
+📈 Resultados Esperados
 
-Gráficos comparativos de evolução.
+Após a execução, serão gerados:
 
-Listagem das 10 cidades com mais mortes.
+resumo_cidades.txt → Cidades com mais e menos mortes.
 
-Relatórios salvos em .txt e .png.
+top10_mortes.png → Gráfico de barras com as 10 cidades que mais registraram mortes.
+
+populacao_inicial_final.png → Comparativo da população inicial e final das mesmas cidades.
+
+📜 Licença
+
+Este projeto é de uso educacional e pode ser adaptado livremente.

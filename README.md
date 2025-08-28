@@ -4,11 +4,17 @@ Este repositório contém um projeto de análise de dados relacionado à pandemi
 
 📂 Estrutura do Projeto
 Trabalho_matheus/
+
 │── casos_full.csv              # Base de dados bruta
+
 │── clean_casos_full.py         # Script para limpeza e preparação dos dados
+
 │── relatorios_covid.py         # Script para geração de relatórios e gráficos
+
 │── tabela_mortes.csv           # Tabela processada (gerada automaticamente)
+
 │── relatorios/                 # Resultados: gráficos e relatórios em texto
+
 
 ⚙️ Funcionalidades
 

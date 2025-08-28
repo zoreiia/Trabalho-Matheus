@@ -1,72 +1,95 @@
-📊 Projeto de Análise de Dados COVID-19
+README.md
+# 📊 Análise de Casos de COVID-19  
 
-Este repositório contém um projeto de análise de dados relacionado à pandemia de COVID-19, com foco em tratamento, organização e geração de relatórios estatísticos.
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)  
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-yellowgreen)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange)  
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-brightgreen)
 
-📂 Estrutura do Projeto
-Trabalho_matheus/
+Este repositório contém **scripts em Python** e uma base de dados para análise de casos de COVID-19.  
+O objetivo é **limpar, organizar e gerar relatórios visuais** a partir dos dados brutos.  
 
-│── casos_full.csv              # Base de dados bruta
+---
 
-│── clean_casos_full.py         # Script para limpeza e preparação dos dados
-
-│── relatorios_covid.py         # Script para geração de relatórios e gráficos
-
-│── tabela_mortes.csv           # Tabela processada (gerada automaticamente)
-
-│── relatorios/                 # Resultados: gráficos e relatórios em texto
+## 📂 Estrutura do Projeto  
 
 
-⚙️ Funcionalidades
 
-Limpeza e padronização de dados de casos de COVID-19.
+📦 Trabalho Matheus
+┣ 📄 casos_full.csv → Base de dados original
+┣ 📄 clean_casos_full.py → Script de limpeza e tratamento dos dados
+┣ 📄 relatorios_covid.py → Script para geração de relatórios
 
-Geração de tabela consolidada com mortes e populações por cidade.
 
-Relatórios em texto sobre cidades com mais e menos mortes.
+---
 
-Gráficos:
+## ⚙️ Instalação  
 
-Top 10 cidades com mais mortes.
+Clone o repositório:  
 
-População inicial x final das cidades com mais mortes.
+```bash
+git clone https://github.com/usuario/repositorio.git
+cd repositorio
+
+
+Crie um ambiente virtual (opcional, mas recomendado):
+
+python -m venv venv
+source venv/bin/activate   # Linux / Mac
+venv\Scripts\activate      # Windows
+
+
+Instale as dependências:
+
+pip install -r requirements.txt
+
+
+Caso não exista um requirements.txt, você pode instalar manualmente:
+
+pip install pandas matplotlib seaborn
+
+🚀 Como Usar
+🔹 Limpeza dos dados
+
+Executar o script de limpeza:
+
+python clean_casos_full.py
+
+🔹 Geração de relatórios
+
+Rodar o script de relatórios após a limpeza:
+
+python relatorios_covid.py
+
+
+Isso irá gerar gráficos e análises estatísticas sobre os casos de COVID-19.
+
+📊 Sobre os Dados
+
+Arquivo: casos_full.csv
+
+Descrição: Contém registros de casos de COVID-19 (datas, regiões, quantidades, etc.)
+
+Processamento: O arquivo é tratado pelo clean_casos_full.py antes de ser usado em análises.
 
 🛠️ Tecnologias Utilizadas
 
-Python 3
+Python
+ 🐍
 
 Pandas
- → Manipulação e análise de dados
+ 📑
 
 Matplotlib
- → Geração de gráficos
+ 📊
 
-▶️ Como Executar
-1. Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+Seaborn
+ 🎨
 
-2. Instalar dependências
-pip install pandas matplotlib
+📌 Melhorias Futuras
 
-3. Gerar a tabela de mortes
-python clean_casos_full.py
+ Criar dashboards interativos (Plotly/Dash).
 
+ Documentar exemplos visuais dos relatórios.
 
-Isso criará o arquivo tabela_mortes.csv.
-
-4. Criar relatórios e gráficos
-python relatorios_covid.py
-
-📈 Resultados Esperados
-
-Após a execução, serão gerados:
-
-resumo_cidades.txt → Cidades com mais e menos mortes.
-
-top10_mortes.png → Gráfico de barras com as 10 cidades que mais registraram mortes.
-
-populacao_inicial_final.png → Comparativo da população inicial e final das mesmas cidades.
-
-📜 Licença
-
-Este projeto é de uso educacional e pode ser adaptado livremente.
+ Expandir análises estatísticas avançadas.
